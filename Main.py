@@ -1,9 +1,10 @@
 import os
-from communication import server
+import sys
+import server
 
 def Main():
     print 'prueba de inicio de app en Python'
-    my_server = server()
+    my_server = Server()
     print 'Init server'
     my_server.Run_sever()
 
