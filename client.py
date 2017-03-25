@@ -1,9 +1,8 @@
 import socket
 
-class Client(object):
+class Client ( object ):
     """docstring for ."""
     def __init__(self, arg):
-        super(, self).__init__()
         self.arg = arg
 
         def Connect(self):
