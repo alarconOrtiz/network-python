@@ -5,11 +5,11 @@ class Client ( object ):
     def __init__(self, arg):
         self.arg = arg
 
-        def Connect(self):
-            pass
-        def Disconnect(self):
-            pass
-        def SendInfo(self):
-            pass
-        def RecieveInfo(self):
-            pass
+    def Connect(self):
+        pass
+    def Disconnect(self):
+        pass
+    def SendInfo(self):
+        pass
+    def RecieveInfo(self):
+        pass
