@@ -2,7 +2,7 @@ from server import Server
 
 def Main():
     print 'prueba de inicio de app en Python'
-    my_server = Server(111,'IDLE')
+    my_server = Server(50000,'IDLE')
     print 'Init server'
     my_server.Run_sever()
 
