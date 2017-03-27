@@ -1,13 +1,12 @@
 import socket
 
 class Server( object ):
-    """docstring for ."""
+    """this class contains a server tcp where its port is given by a constructor"""
     #declararion of class variables
 
 
-    def __init__( self, port, status ):
+    def __init__( self, port ):
         self.port      = port
-        self.status    = status
         self.__status_running_server = 0
         self.socket_fd = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #IPV4 & TCP
 
