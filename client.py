@@ -3,9 +3,8 @@ import socket
 class Client ( object ):
     """docstring for ."""
     _sock = None
-    def __init__(self, arg):
+    def __init__(self):
         global _sock
-        self.arg = arg
         #creating socket TCP/IP.
         _sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         
@@ -20,7 +19,7 @@ class Client ( object ):
         
     def SendInfo(self, frame):
         # this methos will take the class frame and 
-        _sock.sendall(frame.ToString())
+        _sock.sendall(frame)
         
     def RecieveInfo(self):
         _sock.recv()

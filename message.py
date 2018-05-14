@@ -1,4 +1,5 @@
-import Frame from frame
+from frame import Frame
+
 class Message ( Frame ):
     """
     this class works like a basic structure to compose the format of the message .

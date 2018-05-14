@@ -1,4 +1,10 @@
-class  Frame(object):
+class  Frame( object ):
     """docstring fo  Frame."""
+    _dataFrame = None
     def __init__(self, dataFrame):
-        self.dataFrame = dataFrame
+        global _dataFrame
+        _dataFrame = dataFrame
+    
+    def ToString(self):
+        pass
+

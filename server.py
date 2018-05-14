@@ -12,14 +12,16 @@ class Server( object ):
 
    #methods to work with server.
     def Run_sever( self ):
+        data = None
         __status_running_server = 1
-        self.socket_fd.bind( ('', self.port) )
+        self.socket_fd.bind( ('localhost', self.port) )
         self.socket_fd.listen( 5 )
-        print 'ready to listen'
+        print ('ready to listen')
         while __status_running_server:
             socket_c, (host_c, puerto_c) = self.socket_fd.accept()
-            print 'recived packet from client.'
-
+            data = socket_c.recv(256)
+            print ('recived packet from client.',data)
+            data = ''
         self.socket_fd.close()
 
     def Stop_sever( self ):
